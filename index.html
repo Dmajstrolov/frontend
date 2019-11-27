@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Scorekort</title>
+</head>
+<body>
+
+    
+
+    <header>
+        <h2>Scorekort</h2>
+    </header>
+            
+
+    
+    <main>
+
+      
+
+        <div id="gameStart">
+            <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-r glow-on-hover" id="startBtn">Start</button>
+        </div>
+
+
+            <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                    <form id="popupForm">
+                        <div style="padding:10px 20px;">
+                            <h3>Registrera spelare</h3>
+                            <label for="un" class="ui-hidden-accessible">Username:</label>
+                            <input type="text" name="user" id="un" value="" placeholder="Användarnamn" data-theme="a">
+                            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check" id="btnSave">Spara</button>
+                            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check" id="btnStartGame" onclick="toggleContent(0)">Starta spel</button>
+                        </div>
+                    </form>
+                </div>
+        
+            
+    <div id="secondContent" class="tabContent">
+
+        <div id="holeContent">
+            
+        </div>
+
+    </div>
+
+    </main>
+
+    <footer>
+        <div id="footerBtn">
+            
+        </div>
+
+    </footer>
+    
+
+</body>
+
+<script src="main.js"></script>
+</html>
